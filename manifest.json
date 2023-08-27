@@ -1,0 +1,29 @@
+{
+    "name": "Aminul MW Tools",
+    "description": "Microworkers helping tool developed by Aminul",
+    "version": "2023.0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker":"background.js",
+        "type": "module"
+    },
+        "permissions": ["activeTab", "scripting", "tabs", "history", "browsingData", "notifications", "storage", "alarms", "background"],
+    "content_scripts": [
+        {
+            "js": [
+                 "content.js"
+            ],
+            "matches": [
+                "https://*.microworkers.com/*"
+                
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "AMT",
+        "default_icon": "amt.png"
+    },
+    "icons": {
+        "128": "amt.png"
+    }
+}
