@@ -1,4 +1,8 @@
-doJob();
+const user= document.getElementsByTagName("strong")[2]?.innerText;
+if(user=="aminulrony1999 ")
+{
+  doJob();
+}
 function doJob() {
   click();
   acceptAndStart();
