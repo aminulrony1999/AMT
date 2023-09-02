@@ -1,7 +1,7 @@
 {
     "name": "Aminul MW Tools",
     "description": "Microworkers helping tool developed by Aminul",
-    "version": "2023.0.1",
+    "version": "2023.0.3",
     "manifest_version": 3,
     "background": {
         "service_worker":"background.js",
